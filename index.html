@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>NguyenLan - Website Store</title>
+<meta name="description" content="Website Nlan - Dịch Vụ Phần Mềm Game Free Fire An Toàn & Tài Khoản Premium Chất Lượng. Admin Nguyen Lann - User: @nlan.h4x">
+<link rel="icon" href="https://i.imgur.com/GjxiWE9.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" defer></script>
+ <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></head><body><script>function showSecurityPopup(message) {const old = document.getElementById('security-popup');if (old) old.remove();const overlay = document.createElement('div');overlay.id = 'security-popup';overlay.innerHTML = `<div class="security-overlay"></div><div class="security-box"><h2>⚠️ CẢNH BÁO BẢO MẬT ⚠️</h2><p>${message}</p><h3>© Admin Nlan – Security Protection</h3></div>`;document.body.appendChild(overlay);const box = overlay.querySelector('.security-box');setTimeout(() => box.classList.add('security-popup-show'), 10);setTimeout(() => {box.classList.remove('security-popup-show');box.classList.add('security-popup-hide');setTimeout(() => {try { overlay.remove(); } catch(_) {}}, 200);}, 2000);}document.addEventListener('contextmenu', function(e) {e.preventDefault();showSecurityPopup('Chức năng chuột phải đã bị vô hiệu hóa để bảo mật mã nguồn của Website.');});document.onkeydown = function(e) {const K = e.key.toUpperCase();const keyMap = [{ check: e.keyCode === 123, msg: 'F12 bị chặn để bảo vệ mã nguồn.' },{ check: e.ctrlKey && e.shiftKey && e.keyCode === 73, msg: 'Ctrl+Shift+I bị chặn.' },{ check: e.ctrlKey && e.shiftKey && e.keyCode === 74, msg: 'Ctrl+Shift+J bị chặn.' },{ check: e.ctrlKey && e.shiftKey && e.keyCode === 67, msg: 'Ctrl+Shift+C bị chặn.' },{ check: e.ctrlKey && e.keyCode === 85, msg: 'Ctrl+U bị chặn.' },{ check: e.ctrlKey && e.keyCode === 83, msg: 'Ctrl+S bị chặn.' },{ check: e.ctrlKey && e.keyCode === 80, msg: 'Ctrl+P bị chặn.' },{ check: e.ctrlKey && e.keyCode === 65, msg: 'Ctrl+A bị chặn.' },{ check: e.ctrlKey && e.keyCode === 67, msg: 'Ctrl+C bị chặn.' },{ check: e.ctrlKey && e.keyCode === 88, msg: 'Ctrl+X ị chặn.' },{ check: e.ctrlKey && e.keyCode === 86, msg: 'Ctrl+V bị chặn.' },{ check: e.keyCode === 112, msg: 'F1 bị chặn.' },{ check: e.keyCode === 122, msg: 'F11 bị chặn.' },{ check: e.key === 'ContextMenu' || e.keyCode === 93, msg: 'Menu chuột phải bằng bàn phím bị chặn.' },];for (let i = 0; i < keyMap.length; i++) {if (keyMap[i].check) {showSecurityPopup(keyMap[i].msg);e.preventDefault();return false;}}};setInterval(() => {const start = performance.now();debugger;const end = performance.now();if (end - start > 100) {showSecurityPopup("Developer Tools Đã bị chặn để bảo mật mã nguồn.");setTimeout(() => location.reload(), 2500);}}, 1000);document.addEventListener('dragstart', e => e.preventDefault());document.addEventListener('selectstart', e => e.preventDefault());function applyGlowOnly(selector) {const elements = document.querySelectorAll(selector);elements.forEach(el => {el.style.transition = 'box-shadow 0.3s ease';el.addEventListener('mouseover', () => {el.style.boxShadow = '0 0 15px rgba(165,94,255,0.6)';});el.addEventListener('mouseout', () => {el.style.boxShadow = 'none';});});}applyGlowOnly('.card');applyGlowOnly('.product-info');window.addEventListener('load', () => {const loader = document.getElementById('pageLoader');setTimeout(() => loader.classList.add('hidden'), 569);});</script>
+    <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+    <div class="loader-logo">
+    <i class="fab fa-discord"></i> <span>Website Nlan</span></div>
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Đang khởi tạo...</div>
+    <div class="loader-subtext">Vui lòng chờ trong giây lát</div></div></div>
+    <div id="securityAlertContainer"></div><div id="securityFooter">© Admin Nlan</div>
+    <header class="header"><div class="header-inner container" role="navigation"><div class="logo" aria-hidden="true" style="display:flex; align-items:center; gap:10px;"><div class="mark"><img id="avatar" src="https://i.gifer.com/XOsX.gif" alt="Avatar" style="width:65px; height:65px; border-radius:30%;"></div><div>
+    <div style="display:flex; align-items:center; gap:5px;">
+    <div class="title" style="font-weight:bold; font-size:18px;">Nlan</div>
+    <img src="https://i.imgur.com/L0GmCbu.png" alt="✔" style="width:17px; height:17px;"></div>
+    <div style="font-size:14px; margin-top: 2px; color:var(--muted);">Website</div></div> </div>       
+    <div class="clock-box">
+    <div id="clock-time">--:--:--</div>
+    <div class="clock-label"><i class="fas fa-clock"></i> Clock time</div></div>
+    <div class="menu-hamburger" id="menuToggle"><i class="fa-solid fa-bars"></i></div>
+    <nav class="header-nav" id="headerNav">
+    <ul id="navMenu">
+    <li data-target="#hero" data-title="Trang chủ"><a href="#">Trang chủ</a></li>
+    <li data-target="#about" data-title="Giới thiệu"><a href="#">Giới thiệu</a></li>
+    <li data-target="#products" data-title="Sản phẩm"><a href="#">Sản phẩm</a></li>
+    <li data-target="#chitiet" data-title="Chi tiết"><a href="#">Chi tiết</a></li>
+    <li data-target="#payment" data-title="Thanh toán"><a href="#">Thanh toán</a></li>
+    <li data-target="#contact" data-title="Liên hệ"><a href="#">Liên hệ</a></li>
+    <li data-target="#premium" data-title="Tài khoản Pro"><a href="#" class="premium-link"style="color: gold; text-decoration: none; margin-right: 6px;text-shadow: 0 0 6px rgba(255, 217, 0, 0.658);"><i class="fas fa-crown"style="color: gold; margin-right: 6px; text-shadow: 0 0 6px gold;"></i><strong>Tài Khoản Pro</strong></a></li>
+    </ul><div class="close-menu"><i class="fa-solid fa-arrow-left"></i><span>Exit</span></div></nav></header>
+    <section id="hero" class="hero">
+    <div class="hero-wrap container"><div>
+    <h1 class="hero-title">NGUYEN HOANG LAN</h1>      
+    <p class="hero-sub">An toàn - Uy Tín - chất lượng cao. Nơi bạn có thể yên tâm khi trải ngiệm dịch vụ.Tất cả các vấn đề gặp phải và cần được hỗ trợ vui lòng liên hệ Admin bên dưới. 
+    <a href="#products"style="color: #b05cff; text-decoration: none;"><strong>Tham Khảo Bên Dưới</strong></a></p>
+    <div class="hero-cta">
+    <a href="#products" button class="btn-explore" data-target="#payment-methods"><i class="fas fa-map-marker-alt"></i> Khám Phá</button></a>
+    <a href="#contact" button class="btn-explore" data-target="#payment-methods"><i class="fas fa-comments"></i> Liên Hệ</button></a></div></div>
+    <section class="slideshow-section">
+    <div class="slideshow-container">
+    <div class="slide active-slide">
+    <img src="https://i.imgur.com/a5xnkgx.png" alt="Nlan"></div>
+    <div class="slide">
+    <img src="https://i.imgur.com/Wg1otDW.png" alt="Nlan"></div>
+    <div class="slide">
+    <img src="https://i.imgur.com/yiVVxUh.png" alt="Nlan"></div>
+    <div class="slide">
+    <img src="https://i.imgur.com/z8YrPWk.png" alt="Nlan"></div>
+    <div class="slide">
+    <img src="https://i.imgur.com/fejWDF0.jpeg" alt="Nlan"></div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a></div></section>
+    <canvas id="particleCanvas"></canvas>
+    <div class="subitem2" id="scrollTopBtn" onclick="window.scrollTo({top: document.body.scrollHeight, behavior:'smooth'})">
+    <i class="fa-solid fa-angle-up"></i></div>
+    <div class="subitem3" id="openCard">
+    <i class="fa-solid fa-square-poll-horizontal"></i></div>
+    <div class="user-card" id="userCard">
+    <div class="wifi-widget-card"><span id="wifiPingTextCard">Ping: 36ms</span></div>
+    <div class="card-avatar">
+    <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MWkzOTQ2dHl4Y2o4dWg1ZDE1cXEwaW43b2tpZXkzcmF1bzh3Y2FyYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3udvbCGdXT5ZLfCqgU/giphy.gif" alt="nlan"></div>
+    <div class="nlan-hello" id="nlanHello"></div>
+    <div class="card-status">Online 24/7</div>
+    <div class="card-info">
+    <div class="info-item">
+    <div class="info-title"><i class="fa-solid fa-grip-vertical"></i> Điều Hành Website</div>
+    <div style="margin-top: 2px;" class="info-sub">Nguyen Hoang Lan</div></div>
+    <div style="margin-top: 4px;" class="info-item">
+    <div class="info-title"><i class="fa-solid fa-list-check"></i> Dịch Vụ Game</div>
+    <div style="margin-top: 2px;" class="info-sub">Chất Lượng Cao</div></div>
+    <div style="margin-top: 4px;" class="info-item">
+    <div class="info-title"><i class="fa-solid fa-envelopes-bulk"></i> Phản Hồi Hỗ Trợ</div>
+    <div style="margin-top: 2px;" class="info-sub">Nhiệt tình - 24/7</div></div>
+    <div style="margin-top: 4px;" class="info-item">
+    <div style="margin-top: 2px;" class="info-sub2"><span class="online-dot"></span><a style="margin-left: 5px;">Trả lời tin nhắn & Phản hồi yêu cầu của bạn trong 5phut - Trong thời gian Online.</a></div>
+    <div style="margin-top: 7px;" class="info-sub2"><span class="online-dot"></span><a style="margin-left: 5px;">Để được hỗ trợ nhanh và sớm nhất bạn vui lòng liên hệ qua </a>Zalo: <a href="https://zalo.me/0971553617" target="_blank" style=" color: #5ec4ff;text-decoration: none;">0971553617</a> - Zalo Chính.</div>
+    <div style="margin-top: 7px;" class="info-sub2"><span class="online-dot"></span><a style="margin-left: 5px;">Ngân hàng sử dụng chính VCB: 1055050498 NGUYEN HOANG LAN <i class="fa-solid fa-circle-dollar-to-slot"></i></a></div>
+    <div style="margin-top: 7px;" class="info-sub2"><span class="online-dot"></span><a style="margin-left: 5px;">Liên Hệ Ngay :</a><a href="https://www.facebook.com/nlan.h4x" target="_blank" style=" color: #5ec4ff;text-decoration: none;"> @nlan.h4x</a></div></div></div>
+    <div class="card-footer"><i class="fa-solid fa-code"></i> SERVICES HUB - 2025</div>
+    <button id="closeCard">&times;</button></div>
+    <section id="about" style="padding:80px 20px;font-family:'Inter',sans-serif;color:#fff;">
+    <div class="about-nlan-container" style="max-width:1300px;margin:auto;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start;">
+    <div class="about-nlan-text" style="flex:1 1 550px;min-width:300px;">
+    <h2 class="nlan-text">Giới Thiệu</h2>
+    <p style="line-height:1.7;font-weight:500;color:var(--muted);margin-bottom:18px;"><b>Xin Chào,</b> Chào mừng bạn đến với Website. Nơi chúng tôi quảng cáo và giới thiệu về các sản phẩm và nhiều dịch vụ bên <b>Nlan</b>.Với <b>Kinh nghiệm nhiều năm hoạt động trong lĩnh vực</b>, bạn hoàn toàn có thể tin tưởng và yên tâm khi sử dụng các sản phẩm bên chúng tôi. Nlan mang đến cho bạn nhiều phần mềm hỗ trợ chơi Game như:<b style="font-weight:520;">Panel Menu Aimbot Aimlock, Dịch vụ về Registry editor (Mouse), Tối ưu hóa Fix Lag khi chơi Game, Phần mềm Bypass Fake Mobile </b> Và nhiều sản phẩm khác.</p>
+    <p style="line-height:1.7;font-weight:500;color:var(--muted);">Cam kết mang đến cho bạn những trải nghiệm chơi game tốt nhất với khả năng Ghim đầu Headshot trong các trận đấu, làm chủ cuộc chơi với độ an toàn tuyệt đối.</p>
+    <section class="about-nlan-stats">
+    <div class="stat-box">
+    <h4  data-target="100" data-speed="3200" data-suffix="%">0</h4>
+    <p>An Toàn</p></div>
+    <div class="stat-box">
+    <h4 data-target="100" data-speed="3000" data-suffix="%">0</h4>
+    <p>Dịch Vụ Uy Tín</p></div>
+    <div class="stat-box">
+    <h4 data-target="99.9" data-speed="2900" data-suffix="%">0</h4>
+    <p>Khách Hàng Hài Lòng</p></div></section></div></section>
+    <section class="section" style="padding:60px 20px;border-radius:16px;color:#fff;font-family:'Inter',sans-serif">
+    <div class="shimmer-card">
+    <div style="border-radius:16px;padding:16px;backdrop-filter:blur(10px);height:100%"> 
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-start;text-align:left">
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOG45ZzNucjdmcHh4ZDJ0ZDY1ZW5xZzkwcHVtN3Z2dDRicW8xaW5jciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f3iwJFOVOwuy7K6FFw/giphy.gif" alt="owner" style="border-radius:16px;width:75px;height:75px;object-fit:cover;border:2px solid rgba(255,255,255,0.1);box-shadow:0 1px 15px rgba(165,94,255,0.25)"><div><span style="color:#b05cff;"><i class="fab fa-discord" style="color:#b464ff;font-size:15px;"></i> Website Store</span><div style="display:flex;align-items:center;gap:6px;"><span style="font-weight:550;font-size:15px;color:#fff;">Nguyen Hoang Lan</span> </div><div style="font-size:14px;color:#aaa;margin-top:2px;">Quản Trị Viên</div></div></div>      
+    <div style="margin-top:14px;font-weight: 560;color:#aaa;font-size:14px;line-height:1.6;"><p><strong>Bên Cạnh</strong>, Các Sản Phẩm Về Game Bên Mình Còn Bán Các Tài Khoản Premium Như: Capcut PRO, Youtube Premium, Canva PRO, ChatGPT Plus, Gemini Veo3 Giá Rẻ Và Tốt Nhất Để Bạn Có Thể Bán Lại Và Bảo Hành Toàn Bộ Để Bạn Có Thể Yên Tâm Và Sử Dụng. </p></div><div style="margin-top:14px;color:#aaa;font-size:14px;line-height:1.6;">Lưu ý: Chỉ liên hệ qua thông tin chính chủ trong Website này. Để được hỗ trợ nhanh nhất vui lòng liên qua Zalo Bên Dưới ! </p></div></div></div></div> </div></div></div></div></section></div></div></div></div></div></section><div class="audio-circle-container"> <div class="audio-ring" id="audioRing"><i class="fas fa-music"></i></div><div class="audio-player-box" id="audioPlayerBox">
+    <div class="music-info">
+    <img src="https://i.gifer.com/47tv.gif" alt="music" class="music-gif">
+    <div class="music-text">B-Đôi Tay Nhau Ra
+    <div class="music-text2">Sơn Tùng M-TP</div></div></div>
+    <div class="music-wave">
+    <span></span><span></span><span></span><span></span><span></span>
+    <div class="music-controls">
+    <button id="playPause" class="control-btn"><i class="fas fa-play"></i></button>
+    <button id="playPause" class="control-btn"><i class="fas fa-volume-up"></i></button>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.7"></div></div></div><audio id="bgMusic" src="introwebnguyenlan.mp3" preload="auto" loop></audio></div>
+    <section id="products" class="pricing-section">
+    <div class="container">
+    <h2 class="section-title">Bảng Giá Sản Phẩm</h2></div>    
+    <div id="featureRow"style="margin-top:2px;margin-bottom: 28px;display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;"></div>
+    <div class="pricing-grid">
+    <div class="pricing-card">
+    <div class="card-head-horizontal">
+    <div class="feature-icon alt">
+    <img src="https://i.imgur.com/8KSDX38.png" alt="Logo" class="feature-img"></div>
+    <div class="card-title-wrapper">
+    <h3 class="card-title-chinhlai">Panel Aimbot</h3>
+    <span class="card-subtitle">Menu Aim Safe </span></div></div>
+    <div class="shine"></div>
+    <div class="card-head"></div>            
+    <div class="price-row">
+    <div class="price-item"><span class="label">Key 1 Ngày</span><span class="amount">25.000đ</span></div>
+    <div class="price-item"><span class="label">Key 3 Ngày</span><span class="amount">75.000đ</span></div>
+    <div class="price-item"><span class="label">Key 7 Ngày</span><span class="amount">125.000đ</span></div>
+    <div class="price-item"><span class="label">Key 14 Ngày</span><span class="amount">235.000đ</span></div>
+    <div class="price-item"><span class="label">Key 30 Ngày</span><span class="amount">370.000đ</span></div>
+    <div class="price-item"><span class="label">Vĩnh viễn</span><span class="amount">1.950.000đ</span></div></div>
+    <a style="margin-top: 20px;" href="#payment" class="contact-btn buy-btn" data-popup="popup-bypass"><i class="fa-solid fa-cart-plus"></i> Mua Ngay</a></div>
+    <div class="pricing-card">
+    <div class="card-head-horizontal">
+    <div class="feature-icon alt">
+    <img src="https://i.imgur.com/NXpa1Xk.jpeg" alt="Logo" class="feature-img"></div>
+    <div class="card-title-wrapper">
+    <h3 class="card-title-chinhlai">Regedit </h3>
+    <span class="card-subtitle">Mouse Accel</span></div></div>
+    <div class="shine"></div>
+    <div class="card-head"></div>
+    <div class="price-row">
+    <div class="price-item"><span class="label">Reg Normal:</span><span class="amount">120.000đ</span></div>
+    <div class="price-item"><span class="label">Reg Upgrade:</span><span class="amount">150.000đ</span></div>
+    <div class="price-item"><span class="label">Key Special:</span><span class="amount">250.000đ</span></div>
+    <div class="price-item"><span class="label">Reg Lock:</span><span class="amount">400.000đ</span></div>
+    <div class="price-item"><span class="label">Reg VIP:</span><span class="amount">550.000đ</span></div></div>
+    <a style="margin-top: 20px;" href="#payment" class="contact-btn buy-btn" data-popup="popup-bypass"><i class="fa-solid fa-cart-plus"></i> Mua Ngay</a></div>
+    <div class="pricing-card">
+    <div class="card-head-horizontal">
+    <div class="feature-icon alt">
+    <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aWxuMDBqMHhrdjA5b3cwdXg0eGJibHFrOWR0d284dW03d2R2bXh1eiZlcD12MV9naWZzX3JlbGF0ZWQmY3Q9Zw/nlCcYuunfhmXdItFzS/giphy.gif" alt="Logo" class="feature-img"></div>
+    <div class="card-title-wrapper">
+    <h3 class="card-title-chinhlai">Bypass</h3>
+    <span class="card-subtitle">Fake Mobile</span></div></div>
+    <div class="shine"></div>
+    <div class="card-head"></div>     
+    <div class="price-row">
+    <div class="price-item"><span class="label">Key 1 Ngày</span><span class="amount">25.000đ</span></div>
+    <div class="price-item"><span class="label">Key 3 Ngày</span><span class="amount">65.000đ</span></div>
+    <div class="price-item"><span class="label">Key 7 Ngày</span><span class="amount">120.000đ</span></div>
+    <div class="price-item"><span class="label">Key 14 Ngày</span><span class="amount">225.000đ</span></div>
+    <div class="price-item"><span class="label">Key 30 Ngày</span><span class="amount">350.000đ</span></div></div>
+    <a style="margin-top: 20px;" href="#payment" class="contact-btn buy-btn" data-popup="popup-bypass"><i class="fa-solid fa-cart-plus"></i> Mua Ngay</a></div></div></div></section>
+    <div id="features" class="features-section">
+    <div class="container">
+    <div class="features-grid">
+    <div class="feature-card">
+    <div style="display:flex; justify-content:center;">
+    <div class="feature-icon alt">
+    <i class="fa-brands fa-app-store" style="font-size:45px;"></i></div></div>
+    <h3 class="feature-title2">Devie iOS</h3>
+    <p class="feature-subtitle2">iMAZING - Filza</p>
+    <div class="price-row">
+    <div class="price-item"><span class="label">• Giá iMAZING</span><span class="amount">200.000đ</span></div> 
+    <div class="price-item"><span class="label">• Giá Filza</span><span class="amount">150.000đ</span></div>  
+    <div class="price-item"><span class="label">• File Premium</span><span class="amount">350.000đ</span></div>  </div>
+    <div style="margin-top: 22px;" class="feature-list2">
+    <p>– Cài đặt được trên tất cả dòng máy iOS</p>
+    <p>– Khi Mua ( Premium ) bạn sẽ chơi được All File của iMAZING & Filza Gồm có:</p>
+    <p>– Aim Neck, Aim Drag, Aim Body, Aim Chest, Magic Bullet, Aim + Hologram, và nhiều File khác.</p></div>
+    <a style="margin-top: 20px;display:flex; justify-content:center;" href="#payment" class="contact-btn buy-btn" data-popup="popup-bypass">Buy Now</a></div>
+    <div class="feature-card">
+    <div style="display:flex; justify-content:center;">
+    <div class="feature-icon alt">
+    <i class="fa-brands fa-android" style="font-size:35px;"></i></div></div>
+    <h3 class="feature-title2">Device Androi</h3>
+    <p class="feature-subtitle2">APP APK - File Advanced</p>
+    <div class="price-row">
+    <div class="price-item"><span class="label">• FILE ANDROI V1</span><span class="amount">120.000đ</span></div>  
+    <div class="price-item"><span class="label">• FILE ANDROI V2</span><span class="amount">200.000đ</span></div>  
+    <div class="price-item"><span class="label">• APK ANDROI</span><span class="amount">250.000đ</span></div>  
+    <div class="price-item"><span class="label">• APP VIP</span><span class="amount">300.000đ</span></div></div>
+    <div style="margin-top: 22px;" class="feature-list2">
+    <p>– Giúp việc kéo tâm vốn bị nặng và khó kéo tâm của các dòng máy Androi trở nên nhẹ tâm dễ dàng kéo tâm với độ bám đầu & chính xác cao.</p></div>
+    <a style="margin-top: 20px;display:flex; justify-content:center;" href="#payment" class="contact-btn buy-btn" data-popup="popup-bypass">Buy Now</a></div>
+    <div class="feature-card">
+    <div style="display:flex; justify-content:center;"><div class="feature-icon alt">
+    <i class="fas fa-tachometer-alt" style="font-size:35px;"></i></div></div>
+    <h3 class="feature-title2">Tối ưu Fix Lag</h3>
+    <p class="feature-subtitle2">Giảm Lag - Tăng FPS Thiết Bị</p>
+    <div class="price-row">
+    <div class="price-item"style="display:flex; justify-content:center; gap:5px;"><span style="text-align:center;"><strong style="color: #a55eff;" >150.000VND</strong></span></div>  
+    <div class="price-item"style="display:flex; justify-content:center;"><span style="text-align:center;"><strong style="color: #a55eff;" >300.000VND <i class="fa-solid fa-angle-double-up"></i></strong></span></div></div> 
+    <div style="margin-top: 22px;" class="feature-list2">
+    <p>Tối ưu hóa sẽ giúp thiết bị giảm giật lag tăng FPS khi chơi game, để bạn có thể trải nghiệm Game 1 cách ổn định và mượt mà.</p></div>
+    <a style="margin-top: 20px;display:flex; justify-content:center;" href="#payment" class="contact-btn buy-btn" data-popup="popup-bypass">Buy Now</a></div></div></div></section>
+    <section id="chitiet" class="features-section">
+    <div class="container">
+    <h2 style="text-shadow: 0 0 25px rgba(166, 102, 255, 0.541);" class="section-title">Chi Tiết Sản Phẩm</h2>
+    <div class="features-grid">
+    <div class="feature-card">
+     <div class="feature-icon">
+      <i class="fas fa-gamepad"></i></div>
+       <h3 class="feature-title">Chi Tiết Tính Năng</h3>
+        <p class="feature-subtitle">Panel Menu - Bypass (PC)</p>
+         <div class="feature-list basic">
+          <p><strong>Aimlock (Khóa Chặt Đầu): </strong> Khóa chặt vùng đầu, giúp tâm súng ghim đầu tuyệt đối.</p>
+          <p><strong>Aimbot (Auto Headshot): </strong> Tự động ghim đầu không cần kéo tâm cực an toàn.</p>
+          <p><strong>ESP (Hiển Thị Vị Trí ):</strong> Xác định vị trí kẻ địch qua tường dễ dàng.</p>  
+          <p><strong>No Recoil (Đạn Thăng): </strong> Giúp đạn khi bắn ra thẳng 100%, không lạc đạn.</p></div>
+          <div class="feature-list advanced">          
+          <p><strong>No Reload (Nạp Đạn Nhanh): </strong> Tự động nạp đạn, sử dụng súng vô hạn.</p>
+          <p><strong>Speed (Chạy Nhanh): </strong> Giúp bạn tăng tốc độ di chuyển - siêu nhanh. </p>
+          <p><strong>Teleport:</strong> Dịch chuyển tức thì tới mục tiêu.</p>
+          <p><strong>Fake Lag:</strong> Làm địch đứng yên tạm thời.</p>
+          <p><strong>Stream Mode: </strong> Tự động ẩn Bảng Menu và ESP khi Quay & Chụp Màn.</p>        
+          <h3 class="feature-title" style="margin-top: 30px;">BYPASS PC</h3> 
+          <p><strong>Fake Thiết Bị:</strong> Biến PC thành mobile, xóa biểu tượng giả lập trong Game.</p>
+          <p><strong>Ghép Trận Nhanh:</strong> Giúp ghép trận cùng mobile vào trận tức thì.</p>
+          <p><strong>Safe 100%</strong> Không can thiệp vào dữ liệu gốc nên an toàn tuyệt đối.</p></div>
+          <button class="toggle-btn" onclick="toggleFeatures(this)"><i class="fas fa-chevron-down"></i><span>Xem thêm tính năng</span></button></div>
+          <div class="feature-card">
+          <div class="feature-icon alt">
+          <i class="fa-regular fa-lightbulb"></i></div>
+          <h3 class="feature-title">Mẹo Chơi Tránh BAND</h3>
+          <p class="feature-subtitle">Để có thể sử dụng đi leo rank 1 cách an toàn không bị Band ACC & Band ID, bạn hãy luôn lưu ý nhưng điều sau khi sử dụng: </p>
+          <div class="feature-list">
+          <p><strong>Không Sử Dụng Quá Lộ:</strong> Tránh sử dụng các chức năng như Speed, No reload, Red blod...</p>
+          <p><strong>Không ăn quá nhiều kill:</strong> Khi leo rank tránh bắn quá nhiều trong 1 trận đấu và hạn chế leo chuỗi quá cao.</p>
+          <p><strong>Không sử dụng các chức năng có RISK:</strong> hãy nên sử dụng các chức năng SAFE để an toàn nhất.</p>    </div></div>
+          <div class="feature-card">
+          <div class="feature-icon glow">
+          <i class="fa-solid fa-download"></i></div>
+          <h3 class="feature-title">Download Miễn Phí</h3>
+          <div class="price-row">
+          <div class="price-item"><span class="label">Tổng Hợp </span><a href="https://link4m.com/go/0c1L3n" target="_blank" class="amount">Miễn Phí</a></div></div>
+          <div class="feature-list">     
+          <div style="margin-top: 15px;" class="price-item"><span class="label">Bluestacks 5</span><a href="https://www.mediafire.com/file/84s1el13nj9gu56/BlueStacksInstaller.exe/file" target="_blank" class="amount">Miễn Phí</a></div></div>
+          <div style="margin-top: 15px;" class="price-item"><span class="label">Config Optimize</span><a href="https://www.mediafire.com/file/arjao2dekyofswk/ConfigOptimize%252B.crt/file" target="_blank" class="amount">Miễn Phí</a></div>      
+          <div style="margin-top: 15px;" class="price-item"><span class="label">Reg Mouse</span><a href="https://www.mediafire.com/file/izgp3t7s9xnhyvu/Reg+-+Nlan+FREE.reg/file" target="_blank" class="amount">Miễn Phí</a></div></div></div></div></div></section>
+          <div class="bubbles"></div>
+          <section id="premium">
+          <h2 style="text-align:center;text-shadow: 0 0 25px rgba(166, 102, 255, 0.541); font-size: 32px;font-weight: bolder;margin-top: 120px; margin-bottom:12px;"class="section-title">Tài Khoản Premium</h2>
+          <h2 id="typingText" class="typing-smooth"></h2>
+          <div class="premium-grid2">
+          <div class="premium-card" data-product="CapCut Premium">
+          <div class="slideshow-thumb" style="background-image:url('https://i.imgur.com/BBBbLYm.png');">
+          <div class="thumb-nav thumb-prev">&#10094;</div>
+          <div class="thumb-nav thumb-next">&#10095;</div></div>
+          <div class="premium-name">CapCut Pro</div>
+          <div class="premium-desc">CapCut Pro xuất video không dính logo, AI cao cấp và nhiều tính năng khác.</div>
+          <button class="preview-btn">Xem</button></div>
+          <div class="premium-card" data-product="YouTube Premium">
+          <div class="slideshow-thumb" style="background-image:url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHZwaTI2OWVwcmY4NHN2d3RlMmdra3owc2M1N2NwaDlvNXFtMXlteSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/13Nc3xlO1kGg3S/giphy.gif');">
+          <div class="thumb-nav thumb-prev">&#10094;</div>
+          <div class="thumb-nav thumb-next">&#10095;</div></div>
+          <div class="premium-name">YouTube Premium</div>
+          <div class="premium-desc">YTB Premium giúp bạn tận hưởng video không quảng cáo và nhiều tiện ích khác.</div>
+          <button class="preview-btn">Xem</button></div>
+          <div class="premium-card" data-product="Spotify Premium">
+          <div class="slideshow-thumb" style="background-image:url('https://i.imgur.com/3pkpv7P.jpeg');">
+          <div class="thumb-nav thumb-prev">&#10094;</div>
+          <div class="thumb-nav thumb-next">&#10095;</div></div>
+          <div class="premium-name">Spotify Premium</div>
+          <div class="premium-desc">Spotify Premium không bị quảng cáo làm phiền, thưởng thức nhạc chất lượng cao.</div>
+          <button class="preview-btn">Xem</button></div>
+          <div class="premium-card" data-product="Canva Pro">
+          <div class="slideshow-thumb" style="background-image:url('https://i.imgur.com/dmgkK6y.jpeg');">
+          <div class="thumb-nav thumb-prev">&#10094;</div>
+          <div class="thumb-nav thumb-next">&#10095;</div></div>
+          <div class="premium-name">Canva Pro</div>
+          <div class="premium-desc">Canva Pro mở khóa hơn 100 triệu tài nguyên và các template chuyên nghiệp.</div>
+          <button class="preview-btn">Xem</button></div></div></section>
+          <section id="premium">
+          <div class="premium-grid">
+          <div class="premium-card" data-product="ChatGPT Plus">
+          <div class="slideshow-thumb" style="background-image:url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnk5dHA3cHljMHNzbnBuZGg3eGZuYjNjM2V6NGhhbTZqZzU2czJvYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/f0VbswUmSY6X1cBz4C/giphy.gif');">
+          <div class="thumb-nav thumb-prev">&#10094;</div>
+          <div class="thumb-nav thumb-next">&#10095;</div></div>
+          <div class="premium-name">ChatGPT Plus</div>
+          <div class="premium-desc">ChatGPT Plus cung cấp trải nghiệm vượt trội và mở khóa nhiều tính năng hữu ích. </div>
+          <button class="preview-btn">Xem</button></div>
+          <div class="premium-card" data-product="Gemini Premium">
+          <div class="slideshow-thumb" style="background-image:url('https://i.imgur.com/mhmOisq.jpeg');">
+          <div class="thumb-nav thumb-prev">&#10094;</div>
+          <div class="thumb-nav thumb-next">&#10095;</div></div>
+          <div class="premium-name">Gemini Premium</div>
+          <div class="premium-desc">Gemini Pro là một công cụ AI mạnh mẽ, Trợ lý nội dung, Quản lý thông minh.</div>
+          <button class="preview-btn">Xem</button></div>
+          <div class="premium-card" data-product="Google VEO3 ULTRA">
+          <div class="slideshow-thumb" style="background-image:url('https://i.imgur.com/AAR0DIw.jpeg');">
+          <div class="thumb-nav thumb-prev">&#10094;</div>
+          <div class="thumb-nav thumb-next">&#10095;</div></div>
+          <div class="premium-name">Google VEO3 ULTRA</div>
+          <div class="premium-desc">Google AI Ultra Mang đến nhiều tính năng, Giúp tối ưu công việc và sáng tạo.</div>
+          <button class="preview-btn">Xem</button></div></div></section>
+          <section id="payment" class="section">
+          <div class="container">
+          <h2 style="text-shadow: 0 0 25px rgba(166, 102, 255, 0.541); font-size: clamp(18px, 6.3vw, 34px); margin-bottom: 65px; margin-top: 45px;" class="section-title">Thông Tin Thanh Toán</h2>
+          <section class="payment-grid"> 
+          <div class="bank-card">
+          <img src="https://i.imgur.com/K2LMDtx.png" class="bank-logo" alt="VietcomBank">
+          <div class="bank-name">VietcomBank</div>
+          <div class="bank-info">NGUYEN HOANG LAN</div>
+          <div class="bank-info">STK: 1055050498</div>
+          <button class="qr-btn" onclick="showQR('vcb')"><i class="fas fa-qrcode"></i> Lấy QR</button></div>
+          <div class="bank-card">
+          <img src="https://i.imgur.com/oWrznwj.png" class="bank-logo" alt="VPBank">
+          <div class="bank-name">VPBank</div>
+          <div class="bank-info">NGUYEN HOANG LAN</div>
+          <div class="bank-info">STK: 0971553617</div>
+          <button class="qr-btn" onclick="showQR('vpb')"><i class="fas fa-qrcode"></i> Lấy QR</button></div></section></div></section>
+          <div id="qrModal" class="qr-modal">
+          <div class="qr-content">
+          <span class="close-btn" onclick="closeQR()">&times;</span>
+          <img id="qrImage" src="" alt="QR Code" class="qr-img">
+          <p class="qr-bank-name" id="qrBankName"></p></div></div></div></div></section>
+          <div id="qrModal">
+          <div class="modal-content">
+          <button class="modal-close" onclick="closeQR()">×</button>
+          <h3 style="color:#a55eff;margin-bottom:10px;">Mã QR Thanh Toán</h3>
+          <img id="qrImage" src="" alt="QR Code"></div></div>
+          <div id="premium-modal">
+          <div class="modal-content">
+          <div class="modal-close">&times;</div>
+          <div class="modal-thumb"></div>
+          <div class="modal-name"></div>
+          <div class="modal-desc"></div>
+          <div class="modal-price"></div>
+          <div class="modal-features"></div></div></div>
+          <section id="contact" class="contact reveal">
+          <h2 style="text-shadow: 0 0 25px rgba(166, 102, 255, 0.541); font-size: clamp(16px, 6vw, 32px); margin-bottom: 65px; margin-top: 45px;" class="section-title">Kết Nối Với Chúng Tôi</h2> 
+          <div class="container">
+          <div class="contact-hero">
+          <div id="featureRow" style="margin-bottom: 45px; display:flex; justify-content:center; align-items:center; gap:14px; flex-wrap:wrap;"></div>
+          <div class="contact-main-grid">
+          <div class="contact-info-section">
+          <h3 class="contact-section-title">Thông Tin Liên hệ</h3>
+          <div class="contact-cards-modern">
+          <div class="contact-card-modern zalo-card tilt" data-tilt data-tilt-max="10">
+            <div class="contact-card-bg"></div>
+            <div class="contact-card-content">
+              <div class="contact-icon-modern">
+                <i class="fas fa-comments"></i>
+                <div class="icon-pulse zalo-pulse"></div></div>
+                <div class="contact-info">
+                <h4>Zalo Admin</h4>
+                <p><i class="fas fa-bolt"></i> Phản hồi nhanh và sớm nhất</p>
+                <a href="https://zalo.me/0971553617" target="_blank" class="contact-btn zalo-btn">
+                <span>Liên Hệ</span>
+                <i class="fas fa-arrow-right"></i>
+                </a></div></div></div>
+                <div class="contact-card-modern facebook-card tilt" data-tilt data-tilt-max="10">
+                <div class="contact-card-bg"></div>
+                <div class="contact-card-content">
+                <div class="contact-icon-modern">
+                <i class="fab fa-facebook"></i>
+                <div class="icon-pulse facebook-pulse"></div></div>
+                <div class="contact-info">
+                <h4>Facebook Admin</h4>
+                <p><i class="fas fa-clock"></i> Hỗ trợ nhanh chóng 24/7</p>
+                <a href="https://www.facebook.com/nlan.h4x" target="_blank" class="contact-btn facebook-btn"><span>Liên hệ</span>
+                <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+       <div class="contact-info-section">
+        <h3 class="contact-section-title">Community Zalo</h3>
+         <div class="contact-cards-modern">
+          <div class="contact-card-modern zalo-card tilt" data-tilt data-tilt-max="10">
+           <div class="contact-card-bg"></div>
+            <div class="contact-card-content">
+             <div class="contact-icon-modern">
+              <i class="fa-solid fa-users"></i>
+               <div class="icon-pulse zalo-pulse"></div></div>
+                <div class="contact-info">
+                <h4>Nhóm Zalo 1</h4>
+                <p><i class="fa-solid fa-user-group"></i> Tham gia để nhận được thông báo sớm nhất</p>
+                <a href="https://zalo.me/g/qlrgoc936" target="_blank" class="contact-btn zalo-btn">
+                <span>Tham Gia Ngay</span>
+                <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>  
+          <div class="contact-card-modern zalo-card tilt" data-tilt data-tilt-max="10">
+            <div class="contact-card-bg"></div>
+            <div class="contact-card-content">
+              <div class="contact-icon-modern">
+              <i class="fa-solid fa-people-group"></i>
+              <div class="icon-pulse zalo-pulse"></div>
+              </div>
+              <div class="contact-info">
+              <h4>Nhóm Zalo 2</h4>
+              <p><i class="fa-solid fa-user-group"></i> Tham gia để nhận được thông báo sớm nhất</p>
+              <a href="https://zalo.me/g/shfnbu461" target="_blank" class="contact-btn zalo-btn">
+              <span>Tham Gia Ngay</span>
+              <i class="fas fa-arrow-right"></i>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
+  <section id="contact" style="padding:100px 20px; background:#1a1a1a00; color:#fff;">
+  <div class="container" style="text-align: center;">
+  <h2 style="text-shadow: 0 0 25px rgba(125, 102, 255, 0.541);" class="section-title-dau">Tham gia cộng đồng và Kết nối với chúng tôi</h2>
+   </div>
+    </section>
+     </section>
+      <footer class="footer" >
+      <div class="container" >
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px">
+      <div style="color: #a15aff" style="font-weight:800" ><i class="fab fa-github"style="color: #9849ff"></i> Admin Nguyen Lan <a style="color: #a865ff" style="font-weight:700" > Premium Tools</a></div>
+      </div>
+      <small>&copy; <span id="year"></span> Nlan - All Rights Reserved.</small>
+      </div>
+      </footer>
+      <div id="modal" class="modal" aria-hidden="true"><div class="modal-card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+      <div style="font-weight:800;font-size:18px" id="modalTitle">Product</div><div><button class="icon-btn" id="modalClose"><i class="fa-solid fa-xmark"></i></button></div></div><div class="top" style="display:flex;gap:16px;align-items:flex-start">
+      <img src="https://via.placeholder.com/280x180" id="modalImg" alt="preview"> <div style="flex:1">
+      <div id="modalDesc" style="color:var(--muted)">Product description here</div>
+      <div style="margin-top:12px;display:flex;gap:8px">
+      <a href="https://zalo.me/0971553617" target="_blank" class="btn primary" id="modalBuy"><i class="fa-solid fa-cart-shopping"></i> Buy Now</button></a><a href="#" target="_blank" class="btn primary" id="modalBuy"><i class="fa-solid fa-closer"></i> Đóng</button></a></div><div style="margin-top:12px;color:var(--muted);font-size:13px"><strong>Hỗ trợ:</strong> Cài đặt miễn phí • Hỗ trợ 24/7</div></div></div></div></div><audio id="bgMusic" loop preload="auto"><source src="introwebnguyenlan.mp3" type="audio/mpeg"></audio><div class="custom-cursor"></div>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll("li[data-target]");
+  const sections = [];
+  menuItems.forEach(item => {
+  const target = item.getAttribute("data-target");
+  const title = item.getAttribute("data-title");
+  const el = document.querySelector(target);
+  if (el) {
+  sections.push({ element: el, title: title });}});
+  const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+  if (entry.isIntersecting) {
+  const section = sections.find(s => s.element === entry.target);
+  if (section) {
+  document.title = section.title + " - NguyenLan Website Store";}}});}, { threshold: 0.5 });sections.forEach(sec => observer.observe(sec.element));});
+  const openBtn = document.getElementById("openCard");
+  const userCard = document.getElementById("userCard");
+  const closeBtn = document.getElementById("closeCard");
+  openBtn.addEventListener("click", () => {
+  userCard.classList.toggle("active");
+  adjustCardScale();});
+  closeBtn.addEventListener("click", () => {
+  userCard.classList.remove("active");});
+  document.addEventListener("click", (e) => {
+  if (!userCard.contains(e.target) && !openBtn.contains(e.target)) {
+  userCard.classList.remove("active");}});
+  function adjustCardScale() {
+  const vw = window.innerWidth;
+  const vh = window.innerHeight;
+  const card = userCard;
+  if (!card.classList.contains("active")) return;
+  let scale = Math.min(vw / 400, vh / 500);
+  if (vw <= 768) scale = Math.min(scale, 1);
+  scale = Math.max(scale, 0.85); 
+  scale = Math.min(scale, 1.4);
+  card.style.transform = `translate(-50%, -50%) scale(${scale})`;}
+  window.addEventListener('resize', adjustCardScale);
+  window.addEventListener('orientationchange', adjustCardScale);
+  const lines = ["Xin Chào,Tôi là Nlan.!", "Hello,I am Nlan.!"];
+  const display = document.getElementById("nlanHello");
+  let index = 0;
+  function typeLine(text, callback) {
+  display.textContent = "";
+  let i = 0;
+  const typing = setInterval(() => {
+  display.textContent += text[i];
+  i++;
+  if (i >= text.length) {
+  clearInterval(typing);
+  setTimeout(() => {
+  eraseLine(callback);
+  }, 1000); 
+  }}, 100); }
+  function eraseLine(callback) {
+  let text = display.textContent;
+  let i = text.length;
+  const erasing = setInterval(() => {
+  display.textContent = text.slice(0, i-1);
+  i--;
+  if (i <= 0) {
+  clearInterval(erasing);
+  callback();}
+  }, 50);}
+  function loop() {
+  typeLine(lines[index], () => {
+  index = (index + 1) % lines.length;
+  loop();
+  });}loop();
+  document.addEventListener("DOMContentLoaded", () => {
+  const pingTextCard = document.getElementById("wifiPingTextCard");
+  let currentPing = 36;
+  function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;}
+  function updatePingCard() {
+    const rising = Math.random() < 0.5;
+    if (rising) {
+    currentPing += random(5, 25);
+    if (currentPing > 120) currentPing = random(80, 120);
+    } else {
+    currentPing -= random(5, 15);
+    if (currentPing < 30) currentPing = random(30, 55);}
+    pingTextCard.textContent = "Ping: " + currentPing + "ms";}
+    setInterval(updatePingCard, 1200);});
+  const products = {
+  1:{id:1,title:"Aimbot Pro",price:"₫149.000",img:"https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3ZTZpZGZ2amNjZnYyMGJqa3dmeWZtM2plNmsydTFjcHVmdzM3ZmF0NCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/vRHKYJFbMNapxHnp6x/giphy.gif",desc:"Aimbot Pro — Precision headshots, smooth aim, configurable FOV, adjustable smoothing. Anti-cheat mitigation."},
+  2:{id:2,title:"Aimbot Pro",price:"₫149.000",img:"https://i.imgur.com/HfvRBU2.jpeg",desc:"Aimbot Pro — Precision headshots, smooth aim, configurable FOV, adjustable smoothing. Anti-cheat mitigation."},
+  3:{id:3,title:"Visuals X",price:"₫99.000",img:"https://i.imgur.com/HfvRBU2.jpeg",desc:"Wallhack, Chams, Radar, ESP boxes. Lightweight and customizable."},
+  4:{id:4,title:"Loader Lite",price:"₫59.000",img:"https://i.imgur.com/HfvRBU2.jpeg",desc:"Auto-updating loader, easy install, safe-run mode."},
+  5:{id:5,title:"VIP Accounts",price:"₫299.000",img:"https://i.imgur.com/HfvRBU2.jpeg",desc:"Premium accounts with skins and high rank. Delivered instantly."},
+  6:{id:6,title:"Bluestacks Pack",price:"₫49.000",img:"https://i.imgur.com/HfvRBU2.jpeg",desc:"Optimized Bluestacks configs for max FPS and stability."},
+  7:{id:7,title:"Support 1 Year",price:"₫79.000",img:"https://i.imgur.com/HfvRBU2.jpeg",desc:"Priority support and updates for 1 year."}};
+document.addEventListener('DOMContentLoaded',()=>{
+document.getElementById('year').innerText = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', () => {});
+  const reveals = document.querySelectorAll('.fade-up, .slide-left');
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+    if(e.isIntersecting) e.target.classList.add('show');})
+    },{threshold:0.12});
+    reveals.forEach(r=>observer.observe(r));
+    document.getElementById('productGrid').addEventListener('click', (e)=>{
+    const btn = e.target.closest('button');
+    if(!btn) return;
+    const action = btn.dataset.action;
+    const id = btn.dataset.id;
+    if(action === 'preview'){ openModal(id); }
+    if(action === 'buy'){ openModal(id, true); }});
+  document.getElementById('buyNowBtn').addEventListener('click',()=>openModal(1,true));
+  document.getElementById('moreInfo').addEventListener('click',()=>location.hash='#about');
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('modal').addEventListener('click', (e)=>{ if(e.target === e.currentTarget) closeModal(); });
+  document.getElementById('contactForm').addEventListener('submit', (e)=>{
+  e.preventDefault();
+  alert('Cảm ơn! Chúng tôi đã nhận tin nhắn của bạn.');
+  e.target.reset();});
+  document.getElementById('hamburger').addEventListener('click', ()=> {
+  const nav = document.querySelector('.header-nav');
+  if(nav.style.display === 'flex'){ nav.style.display = 'none'; }
+  else{ nav.style.display = 'flex'; nav.style.flexDirection='column'; nav.style.position='absolute'; nav.style.top='68px'; nav.style.right='12px'; nav.style.background='linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01))'; nav.style.padding='12px'; nav.style.borderRadius='10px'; }});
+  document.getElementById('langToggle').addEventListener('click', toggleLang);
+  document.getElementById('darkToggle').addEventListener('click', toggleDark);
+  document.getElementById('soundToggle').addEventListener('click', toggleSound);
+  document.getElementById('buyThumb').addEventListener('click', ()=>openModal(1,true));
+  document.getElementById('demoThumb').addEventListener('click', ()=>openModal(1,false,true));
+  startTerminal();
+  makeDraggable(document.getElementById('draggable'),document.getElementById('floatControls'));
+  window.musicOn = false;});
+  function openQR(src) {
+  document.getElementById('qrImage').src = src;
+  const modal = document.getElementById('qrModal');
+  modal.style.display = 'flex';}
+  function closeQR() {
+  document.getElementById('qrModal').style.display = 'none';}
+  function downloadQR() {
+  const imgUrl = document.getElementById('qrImage').src;
+  fetch(imgUrl)
+    .then(res => res.blob())
+    .then(blob => {
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "QR-Nlan.png"; 
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(link.href);
+    });}
+  document.querySelectorAll('.tilt').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+    const rotX = (0.5 - y) * 15; 
+    const rotY = (x - 0.5) * 15;
+    card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-6px)`;
+    card.style.setProperty('--mx', `${x*100}%`);
+    card.style.setProperty('--my', `${y*100}%`);
+    card.style.setProperty('--glow-o', 1);});
+    card.addEventListener('mouseleave', ()=>{
+    card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) translateY(0)`;
+    card.style.setProperty('--glow-o', 0);});});
+document.getElementById('qrModal').addEventListener('click', e => {
+if (e.target.id === 'qrModal') closeQR();});
+function openModal(id, isBuy = false, isDemo=false){
+  const product = products[id];
+  if(!product) return;
+  document.getElementById('modalTitle').innerText = product.title + (isBuy ? ' — Mua' : (isDemo ? ' — Demo' : ' — Xem'));
+  document.getElementById('modalImg').src = product.img;
+  document.getElementById('modalDesc').innerText = product.desc + ' — Giá: ' + product.price;
+  document.getElementById('modal').classList.add('open');
+  document.getElementById('modal').setAttribute('aria-hidden','false');
+  document.getElementById('modalBuy').onclick = ()=> {
+  closeModal();
+  setTimeout(()=>{ alert('Thanh toán thành công! Hướng dẫn và file đã được gửi vào email / chat.'); },120);
+  pushTerminalMessage(`[Order] User purchased "${product.title}" — ${product.price}`);};
+  document.getElementById('modalDemo').onclick = ()=> {
+  alert('Demo: Open video or show step-by-step instructions (demo fake).');
+  pushTerminalMessage(`[Demo] Previewed "${product.title}"`);}}
+  function closeModal(){
+  const modal = document.getElementById('modal');
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden','true');}
+  (function createParticles(){
+  const parent = document.createElement('div');
+  parent.style.position='fixed';parent.style.left=0;parent.style.top=0;parent.style.right=0;parent.style.bottom=0;parent.style.zIndex=0;parent.style.pointerEvents='none';
+  document.body.appendChild(parent);
+  const canvas = document.createElement('canvas');
+  parent.appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+  let w=canvas.width=innerWidth, h=canvas.height=innerHeight, particles=[];
+  const conf = {count: Math.max(60, Math.floor(w/20)), speed:0.2};
+  function reset(){w=canvas.width=innerWidth;h=canvas.height=innerHeight;particles=[]; for(let i=0;i<conf.count;i++){particles.push({x:Math.random()*w,y:Math.random()*h,r:Math.random()*2+0.6,vx:(Math.random()-0.5)*conf.speed,vy:(Math.random()-0.5)*conf.speed})}}
+  function draw(){
+    ctx.clearRect(0,0,w,h);
+    for(const p of particles){
+      ctx.beginPath();
+      ctx.fillStyle = `rgba(178,96,255,${0.06 + Math.random()*0.04})`;
+      ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fill();
+      p.x += p.vx; p.y += p.vy;
+      if(p.x<0) p.x = w;
+      if(p.x> w) p.x = 0;
+      if(p.y<0) p.y = h;
+      if(p.y> h) p.y = 0;}requestAnimationFrame(draw);}window.addEventListener('resize', reset);reset(); draw();})();
+  function makeDraggable(handle,container){
+  handle.style.touchAction='none';
+  let dragging=false, offsetX=0, offsetY=0;
+  handle.addEventListener('pointerdown', (e)=>{
+    dragging=true;
+    offsetX = e.clientX - container.offsetLeft;
+    offsetY = e.clientY - container.offsetTop;
+    handle.setPointerCapture(e.pointerId);});
+    handle.addEventListener('pointermove', (e)=>{
+    if(!dragging) return;
+    let x = e.clientX - offsetX;
+    let y = e.clientY - offsetY;
+    x = Math.max(6, Math.min(window.innerWidth - container.offsetWidth - 6, x));
+    y = Math.max(6, Math.min(window.innerHeight - container.offsetHeight - 6, y));
+    container.style.left = x + 'px';
+    container.style.top = y + 'px';
+    container.style.right = 'auto';
+    container.style.bottom = 'auto';});
+  handle.addEventListener('pointerup', (e)=>{ dragging=false; handle.releasePointerCapture(e.pointerId); });}
+  const menuToggle = document.getElementById('menuToggle');
+  const headerNav = document.querySelector('.header-nav');
+  menuToggle.addEventListener('click', () => {
+  headerNav.classList.toggle('active');
+  menuToggle.classList.toggle('open');});
+  let __dark=false;
+  function toggleDark(){
+  __dark = !__dark;
+  if(__dark){
+    document.documentElement.style.setProperty('--bg','#f6f7fb');
+    document.documentElement.style.setProperty('--card','#ffffff');
+    document.documentElement.style.setProperty('--muted','#26324a');
+    document.documentElement.style.setProperty('--glass','rgba(0,0,0,0.04)');
+    document.body.style.color='#071127';
+    document.querySelectorAll('.btn.primary').forEach(b=>b.style.boxShadow='0 8px 26px rgba(0,0,0,0.08)');
+    }else{
+    document.documentElement.style.setProperty('--bg','#060609');
+    document.documentElement.style.setProperty('--card','#0f0f12');
+    document.documentElement.style.setProperty('--muted','#9aa0a6');
+    document.documentElement.style.setProperty('--glass','rgba(255,255,255,0.04)');
+    document.body.style.color='#e9eef9';
+    document.querySelectorAll('.btn.primary').forEach(b=>b.style.boxShadow='0 8px 30px rgba(106,0,255,0.14)');}}
+const audio = document.getElementById("bgMusic");
+const ring = document.getElementById("audioRing");
+const playerBox = document.getElementById("audioPlayerBox");
+const playPause = document.getElementById("playPause");
+const volume = document.getElementById("volumeSlider");
+const waveBars = document.querySelectorAll(".music-wave span");
+let playing = false;
+const canvas = document.getElementById("particleCanvas");
+const ctx = canvas.getContext("2d");
+let particles = [];
+const numParticles = 48; 
+const color = "rgba(178, 96, 255, 0.3)";
+function resizeCanvas() {
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;}
+window.addEventListener("resize", resizeCanvas);
+resizeCanvas();
+class Particle {
+  constructor() {
+  this.reset();}
+  reset() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.size = Math.random() * 3 + 1;
+    this.speedX = (Math.random() - 0.5) * 0.4;
+    this.speedY = (Math.random() - 0.5) * 0.4;
+    this.alpha = Math.random() * 0.5 + 0.2;
+  }
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+
+    if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) {
+      this.reset();
+    }
+  }
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fillStyle = color.replace("0.6", this.alpha.toFixed(2));
+    ctx.shadowColor = "rgba(178,96,255,0.4)";
+    ctx.shadowBlur = 10;
+    ctx.fill();
+  }
+}
+function initParticles() {
+  particles = [];
+  for (let i = 0; i < numParticles; i++) {
+    particles.push(new Particle());
+  }
+}
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particles.forEach(p => {
+    p.update();
+    p.draw();
+  });
+  requestAnimationFrame(animate);
+}
+initParticles();
+animate();
+canvas.style.position = "fixed";
+canvas.style.top = "0";
+canvas.style.left = "0";
+canvas.style.width = "100%";
+canvas.style.height = "100%";
+canvas.style.pointerEvents = "none";
+canvas.style.zIndex = "0"; 
+canvas.style.filter = "blur(0.5px)";
+
+window.addEventListener("load", async () => {
+  try {
+    await audio.play();
+    startMusicUI();
+  } catch {
+    document.body.addEventListener("click", () => startMusicUI(), { once: true });
+  }
+});
+function startMusicUI() {
+  audio.play();
+  ring.classList.add("playing");
+  playerBox.classList.add("show");
+  playPause.innerHTML = '<i class="fas fa-pause"></i>';
+  waveBars.forEach((bar, i) => bar.style.animationDelay = `${i * 0.1}s`);
+  waveBars.forEach(bar => bar.style.animationPlayState = "running");
+  playing = true;}
+ring.addEventListener("click", toggleMusic);
+playPause.addEventListener("click", toggleMusic);
+function toggleMusic() {
+  if (!playing) {
+    audio.play();
+    ring.classList.add("playing");
+    playerBox.classList.add("show");
+    playPause.innerHTML = '<i class="fas fa-pause"></i>';
+    waveBars.forEach(bar => bar.style.animationPlayState = "running");} else {
+    audio.pause();
+    ring.classList.remove("playing");
+    playPause.innerHTML = '<i class="fas fa-play"></i>';
+    waveBars.forEach(bar => bar.style.animationPlayState = "paused");}
+  playing = !playing;}
+volume.addEventListener("input", () => {
+  audio.volume = volume.value;
+});
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 80 && playing) playerBox.classList.remove("show");
+  else if (window.scrollY <= 80 && playing) playerBox.classList.add("show");
+});
+document.querySelectorAll('.card').forEach(card=>{
+  card.addEventListener('click',(e)=>{
+    if(e.target.closest('button')) return;
+    const id = card.dataset.id || card.getAttribute('data-id') || card.querySelector('button[data-id]')?.dataset.id;
+    if(id) openModal(id,false);
+  });
+});
+document.addEventListener('keydown',(e)=>{
+  const modal = document.getElementById('modal');
+  if(e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+});
+
+window.addEventListener('beforeunload', ()=>{
+  clearInterval(terminalInterval);
+});
+function scrollAnimateContact() {
+  const items = document.querySelectorAll('.contact-item');
+  const triggerBottom = window.innerHeight * 0.9;
+
+  items.forEach(item => {
+    const itemTop = item.getBoundingClientRect().top;
+    if(itemTop < triggerBottom){
+      item.classList.add('visible');
+    }
+  });
+}
+const modal = document.getElementById('modal');
+const modalClose = document.getElementById('modalClose');
+document.querySelectorAll('[data-action="preview"]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const id = btn.getAttribute('data-id');
+    const card = document.querySelector(`.card[data-id="${id}"]`);
+    const title = card.querySelector('h3').innerText;
+    const desc = card.querySelector('p').innerText;
+    const img = card.querySelector('img').src;
+
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalDesc').innerText = desc;
+    document.getElementById('modalImg').src = img;
+
+    modal.style.display = 'flex';
+    modal.setAttribute('aria-hidden', 'false');
+  });
+});
+modalClose.addEventListener('click', () => {
+  modal.style.display = 'none';
+  modal.setAttribute('aria-hidden', 'true');
+});
+document.querySelectorAll('#modal a.btn.primary').forEach(btn => {
+  if (btn.innerText.includes('Đóng')) {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.style.display = 'none';
+      modal.setAttribute('aria-hidden', 'true');
+    });
+  }
+});
+modal.addEventListener('click', (e) => {
+  if (e.target.id === 'modal') {
+    modal.style.display = 'none';
+    modal.setAttribute('aria-hidden', 'true');
+  }
+});
+window.addEventListener('scroll', scrollAnimateContact);
+window.addEventListener('load', scrollAnimateContact);
+function copyText(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert('Đã sao chép: ' + text);
+  });}
+function openQR(url) {
+  const modal = document.getElementById('qr-modal');
+  const qrImg = document.getElementById('qr-img');
+  qrImg.src = url;
+  modal.classList.add('open');
+  const downloadBtn = document.getElementById('download-qr');
+  downloadBtn.onclick = () => {
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'QR.png';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+}
+function closeQR() {
+  const modal = document.getElementById('qr-modal');
+  modal.classList.remove('open');
+}
+const menu = document.querySelectorAll('#navMenu li');
+const indicator = document.getElementById('navIndicator');
+function updateIndicator(el) {
+  const rect = el.getBoundingClientRect();
+  const parentRect = el.parentElement.getBoundingClientRect();
+  indicator.style.width = rect.width + 'px';
+  indicator.style.transform = `translateX(${el.offsetLeft}px)`;
+}
+const sections = document.querySelectorAll('section');
+const observerOptions = { threshold: 0.5 };
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      menu.forEach(li => {
+        if(li.dataset.target === `#${entry.target.id}`) {
+          updateIndicator(li);
+        }
+      });
+    }
+  });
+}, observerOptions);
+sections.forEach(sec => observer.observe(sec));
+menu.forEach(li => {
+  li.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(li.dataset.target);
+    target.scrollIntoView({behavior:'smooth'});
+    updateIndicator(li);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  function animateCounts() {
+    document.querySelectorAll(".count").forEach(el => {
+      const target = parseInt(el.getAttribute("data-target"));
+      let count = 0;
+const speed = parseInt(el.getAttribute("data-speed")) || 20; 
+const step = () => {
+  count += 1;
+  el.textContent = count + "%";
+  if (count < target) setTimeout(step, speed);
+  else el.textContent = target + "%";
+};
+      step();
+    });
+  }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounts();
+        observer.disconnect();
+      }
+    });
+  });
+  const aboutSection = document.querySelector("#about");
+  if (aboutSection) observer.observe(aboutSection);
+});
+let slideIndex = 0;
+let slides = document.getElementsByClassName("slide");
+let dots = document.getElementsByClassName("dot");
+function showSlides(n) {
+  if (n >= slides.length) slideIndex = 0;
+  if (n < 0) slideIndex = slides.length - 1;
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].classList.remove("active-slide");
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+  slides[slideIndex].classList.add("active-slide");
+  dots[slideIndex].classList.add("active");
+}
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlides(slideIndex);
+}
+function autoSlide() {
+  slideIndex++;
+  showSlides(slideIndex);
+  setTimeout(autoSlide, 3000); 
+}
+document.addEventListener("DOMContentLoaded", () => {
+  showSlides(slideIndex);
+  autoSlide();
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const statBoxes = document.querySelectorAll(".stat-box");
+  function animateCounter(el, target, duration, suffix = "") {
+    let start = 0;
+    const stepTime = 1000 / 60;
+    const steps = Math.max(Math.floor(duration / stepTime), 1);
+    const increment = target / steps;
+
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= target) {
+        start = target;
+        clearInterval(timer);
+      }
+      el.textContent = Math.floor(start) + suffix;
+    }, stepTime);}
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const h4 = entry.target.querySelector("h4");
+          if (!h4) return;
+
+          const target = Number(h4.dataset.target) || 0;
+          const duration = Number(h4.dataset.speed) || 1200;
+          const suffix = h4.dataset.suffix || "";
+
+          animateCounter(h4, target, duration, suffix);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.5 });
+  statBoxes.forEach((box) => observer.observe(box));});
+(function() {
+  const maxTilt = 11; 
+  const perspective = 800;
+  function handleMove(e, card) {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width;
+    const y = (e.clientY - rect.top) / rect.height;
+    const rotX = (0.5 - y) * (maxTilt * 2);
+    const rotY = (x - 0.5) * (maxTilt * 2);
+    card.style.transform = `perspective(${perspective}px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.03)`;
+    card.style.setProperty('--mx', `${x * 100}%`);
+    card.style.setProperty('--my', `${y * 100}%`);
+    card.style.setProperty('--glow-o', 0.4);}
+    function reset(card) {
+    card.style.transform = `perspective(${perspective}px) rotateX(0deg) rotateY(0deg) scale(1)`;
+    card.style.setProperty('--glow-o', 0);}
+    document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.slideshow-section');
+    cards.forEach(card => {
+      card.classList.add('tilt');
+      card.addEventListener('mousemove', (e) => handleMove(e, card));
+      card.addEventListener('mouseleave', () => reset(card));
+      card.addEventListener('touchmove', (e) => {
+        const t = e.touches[0];
+        handleMove(t, card);
+      }, { passive: true });
+      card.addEventListener('touchend', () => reset(card));});});})();
+(function(){
+  const maxTilt = 11;
+  const cards = document.querySelectorAll('.bank-card');
+  function handleMove(e, card){
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left)/rect.width;
+    const y = (e.clientY - rect.top)/rect.height;
+    const rotX = (0.5 - y) * (maxTilt*2);
+    const rotY = (x - 0.5) * (maxTilt*2);
+    card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateZ(6px)`;
+    card.style.setProperty('--mx', `${x*100}%`);
+    card.style.setProperty('--my', `${y*100}%`);
+    card.style.setProperty('--glow-o',1);}
+  function reset(card){
+    card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) translateZ(0)`;
+    card.style.setProperty('--glow-o',0);}
+  cards.forEach(card=>{
+    card.addEventListener('mousemove', e=>handleMove(e, card));
+    card.addEventListener('mouseleave', ()=>reset(card));
+    card.addEventListener('mouseenter', ()=>card.style.setProperty('--glow-o',1));
+    card.addEventListener('touchmove', e=>{
+      const t = e.touches[0];
+      handleMove(t, card);
+    },{passive:true});
+    card.addEventListener('touchend', ()=>reset(card));});})();
+(function(){
+  const maxTilt = 11;
+  const cards = document.querySelectorAll('.feature-card,.feature-card2,.shimmer-card,.pricing-card,.product-card');
+  function handleMove(e, card){
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left)/rect.width;
+    const y = (e.clientY - rect.top)/rect.height;
+    const rotX = (0.5 - y) * (maxTilt*2);
+    const rotY = (x - 0.5) * (maxTilt*2);
+    card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateZ(6px)`;
+    card.style.setProperty('--mx', `${x*100}%`);
+    card.style.setProperty('--my', `${y*100}%`);
+    card.style.setProperty('--glow-o',1);}
+  function reset(card){
+    card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) translateZ(0)`;
+    card.style.setProperty('--glow-o',0);}
+  cards.forEach(card=>{
+    card.addEventListener('mousemove', e=>handleMove(e, card));
+    card.addEventListener('mouseleave', ()=>reset(card));
+    card.addEventListener('mouseenter', ()=>card.style.setProperty('--glow-o',1));
+    card.addEventListener('touchmove', e=>{
+      const t = e.touches[0];
+      handleMove(t, card);
+    },{passive:true});
+    card.addEventListener('touchend', ()=>reset(card));});})();
+(function(){
+  const maxTilt = 11;
+  const cards = document.querySelectorAll('.product-card');
+  function handleMove(e, card){
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left)/rect.width;
+    const y = (e.clientY - rect.top)/rect.height;
+    const rotX = (0.5 - y) * (maxTilt*2);
+    const rotY = (x - 0.5) * (maxTilt*2);
+    card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateZ(6px)`;
+    card.style.setProperty('--mx', `${x*100}%`);
+    card.style.setProperty('--my', `${y*100}%`);
+    card.style.setProperty('--glow-o',1);}
+    function reset(card){
+    card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) translateZ(0)`;
+    card.style.setProperty('--glow-o',0);}
+    cards.forEach(card=>{
+    card.addEventListener('mousemove', e=>handleMove(e, card));
+    card.addEventListener('mouseleave', ()=>reset(card));
+    card.addEventListener('mouseenter', ()=>card.style.setProperty('--glow-o',1));
+    card.addEventListener('touchmove', e=>{
+      const t = e.touches[0];
+      handleMove(t, card);
+  },{passive:true});
+  card.addEventListener('touchend', ()=>reset(card));});})();
+  const faders = document.querySelectorAll('.fade-up');
+  function scrollFade() {
+  const triggerBottom = window.innerHeight * 0.85; 
+  faders.forEach(fader => {
+    const top = fader.getBoundingClientRect().top;
+    if (top < triggerBottom) {
+    fader.classList.add('show');} else {
+    fader.classList.remove('show'); }});}const qrData = {vcb: {
+    img: 'https://i.imgur.com/Yw05Qbi.png',
+    name: 'NGUYEN HOANG LAN'},vpb: {
+    img: 'https://i.imgur.com/sYSh4R9.png',
+    name: 'NGUYEN HOANG LAN'}};
+  function showQR(bank) {
+  const modal = document.getElementById('qrModal');
+  const qrImage = document.getElementById('qrImage');
+  const qrBankName = document.getElementById('qrBankName');
+  if(qrData[bank]){
+    qrImage.src = qrData[bank].img;
+    qrBankName.textContent = qrData[bank].name;
+    modal.style.display = 'flex';}}
+function closeQR() {
+  const modal = document.getElementById('qrModal');
+  modal.style.display = 'none';}
+window.onclick = function(event) {
+  const modal = document.getElementById('qrModal');
+  if (event.target === modal) {
+    modal.style.display = 'none';}}
+window.addEventListener('scroll', scrollFade);
+window.addEventListener('load', scrollFade); 
+document.addEventListener("DOMContentLoaded", () => {
+  const qrBtn = document.getElementById('qrBtn');
+  const qrPopup = document.getElementById('qrPopup');
+  const qrClose = document.getElementById('qrClose');
+  qrBtn.addEventListener('click', (e) => {
+  e.stopPropagation();
+  qrPopup.classList.add('show');});
+  qrClose.addEventListener('click', () => {
+  qrPopup.classList.remove('show');});
+  qrPopup.addEventListener('click', (e) => {
+    if (e.target === qrPopup) {
+    qrPopup.classList.remove('show');}});});
+const cursor = document.querySelector('.custom-cursor');
+document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';});
+    document.querySelectorAll('.stat-card').forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+      cursor.style.opacity = '1';});
+      card.addEventListener('mouseleave', () => {
+      cursor.style.transform = 'translate(-50%, -50%) scale(0)';
+      cursor.style.opacity = '0';});});
+window.onload = function () {
+  const menuToggle = document.getElementById("menuToggle");
+  const headerNav = document.getElementById("headerNav");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
+  menuToggle?.addEventListener("click", () => {headerNav.classList.add("active");});
+closeMenuBtn?.addEventListener("click", (e) => {e.preventDefault();headerNav.classList.remove("active");});};
+  document.addEventListener('DOMContentLoaded', () => { const productFeatures = {
+    "CapCut Premium":["1 Tháng - 45.000đ","3 Tháng - 150.000đ","6 Tháng - 315.000đ"],
+    "YouTube Premium":["1 Tháng - 49.000đ","3 Tháng - 149.000đ","6 Tháng - 249.000đ","12 Tháng - 429.000đ"],
+    "Spotify Premium":["2 Tháng - 99.000đ"," Nâng Cấp 2 Tháng - 129.000đ"],
+    "Canva Pro":["12 Tháng - 49.000đ"," Nâng Cấp 12 Tháng - 189.000đ"," 24 Tháng - 129.000đ"," Nâng Cấp 24 Tháng - 329.000đ"],
+    "ChatGPT Plus":[,"1 Tháng - 129.000đ",,"3-5TB 1 Tháng - 299.000đ",,"Nâng cấp 3-5TB 1 Tháng - 329.000đ",,"3 Tháng - 429.000đ"],
+    "Gemini Premium":["1 Tháng - 79.000đ","12 Tháng - 259.000đ","Chính Chủ 12 Tháng - 319.000đ"],
+    "Google VEO3 ULTRA":["1 Tháng - 79.000đ","Nâng Cấp 1 Tháng - 239.000đ","Chính Chủ 12 Tháng - 319.000đ","Nâng cấp 12 Tháng - 359.000đ"]};
+    const appImages = {
+    "CapCut Premium": ['url("https://i.imgur.com/BBBbLYm.png")','url("https://i.imgur.com/QYvASww.jpeg")','url("https://i.imgur.com/VEdFXcv.jpeg")'],
+    "YouTube Premium": ['url("https://i.imgur.com/gfEOgXI.jpeg")','url("https://i.imgur.com/YPh44wZ.jpeg")','url("https://i.imgur.com/IuTWNuz.jpeg")'],
+    "Spotify Premium": ['url("https://i.imgur.com/3pkpv7P.jpeg")','url("https://i.imgur.com/9SAKjZG.jpeg")','url("https://i.imgur.com/sZztLaF.jpeg")'],
+    "Canva Pro": ['url("https://i.imgur.com/5OiH8gY.jpeg")','url("https://i.imgur.com/uf2Ro5R.png")','url("https://i.imgur.com/sUd3HEC.jpeg")'],
+    "ChatGPT Plus": ['url("https://i.imgur.com/srse3cZ.jpeg")','url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnk5dHA3cHljMHNzbnBuZGg3eGZuYjNjM2V6NGhhbTZqZzU2czJvYiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/f0VbswUmSY6X1cBz4C/giphy.gif")'],
+    "Gemini Premium": ['url("https://i.imgur.com/mhmOisq.jpeg")','url("https://i.imgur.com/HJim2a6.jpeg")','url("https://i.imgur.com/EEwysBm.jpeg")'],
+    "Google VEO3 ULTRA": ['url("https://i.imgur.com/AAR0DIw.jpeg")','url("https://i.imgur.com/Mcj7mVt.jpeg")'],
+};const typingText = document.getElementById("typingText");const words = [
+  "YouTube Premium",
+  "Spotify Premium",
+  "CapCut Pro",
+  "Canva Pro",
+  "ChatGPT Plus",
+  "Google VEO3 Ultra",
+  "Google Gemini Pro"];let i = 0;
+  function changeWord() {
+  typingText.style.opacity = 0;
+  typingText.style.transform = "translateY(-10px)";
+  setTimeout(() => {
+    typingText.textContent = words[i];
+    typingText.style.opacity = 1;
+    typingText.style.transform = "translateY(0)";
+    i = (i + 1) % words.length;}, 600);}
+    typingText.textContent = words[0];
+    setInterval(changeWord, 1900);
+    const cards = document.querySelectorAll('.premium-card');
+    const modal = document.getElementById('premium-modal');
+    const modalClose = modal.querySelector('.modal-close');
+    cards.forEach(card => {
+    let timeoutReset;
+    const thumb = card.querySelector('.slideshow-thumb');
+    const product = card.getAttribute('data-product');
+    const images = appImages[product] || [];
+    let idx = 0;
+    let interval = setInterval(() => {
+      idx = (idx + 1) % images.length;
+      thumb.style.backgroundImage = images[idx];}, 1500);
+      const prevBtn = thumb.querySelector('.thumb-prev');
+      const nextBtn = thumb.querySelector('.thumb-next');
+      const resetInterval = () => {
+      clearInterval(interval);
+      interval = setInterval(() => { idx = (idx + 1) % images.length; thumb.style.backgroundImage = images[idx]; }, 1500);}
+      prevBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      idx = (idx - 1 + images.length) % images.length;
+      thumb.style.backgroundImage = images[idx];
+      resetInterval();});
+      nextBtn.addEventListener('click', e => {
+      e.stopPropagation();
+      idx = (idx + 1) % images.length;
+      thumb.style.backgroundImage = images[idx];
+      resetInterval(); });
+      card.addEventListener('mouseenter', () => {
+      clearTimeout(timeoutReset);
+      card.classList.add('hovered');
+      clearInterval(interval);});
+      card.addEventListener('mouseleave', () => {
+      const isMobile = window.innerWidth <= 768;
+      const delay = isMobile ? 5000 : 0;
+      timeoutReset = setTimeout(() => { card.classList.remove('hovered'); }, delay);
+      resetInterval();});
+      card.addEventListener('mousedown', () => { clearTimeout(timeoutReset); card.classList.add('hovered'); clearInterval(interval); });
+      card.addEventListener('mouseup', () => { 
+      const isMobile = window.innerWidth <= 768;
+      const delay = isMobile ? 5000 : 0;
+      timeoutReset = setTimeout(() => { card.classList.remove('hovered'); }, delay);
+      resetInterval();});});
+      document.querySelectorAll('.preview-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+      const card = btn.closest('.premium-card');
+      const productName = card.getAttribute('data-product');
+      const thumb = card.querySelector('.slideshow-thumb').style.backgroundImage;
+      const name = card.querySelector('.premium-name').innerText;
+      const desc = card.querySelector('.premium-desc').innerText;
+      const price = "Bảng Giá Các Gói"; 
+      const features = productFeatures[productName] || [];
+      modal.querySelector('.modal-thumb').style.backgroundImage = thumb;
+      modal.querySelector('.modal-name').innerText = name;
+      modal.querySelector('.modal-desc').innerText = desc;
+      modal.querySelector('.modal-price').innerText = price;
+      const featuresContainer = modal.querySelector('.modal-features');
+      featuresContainer.innerHTML = '';
+      features.forEach(f=>{
+      const span=document.createElement('span'); 
+      span.innerText=f;
+      featuresContainer.appendChild(span);});
+      modal.style.display='flex';
+      setTimeout(()=>modal.classList.add('show'),20);});});
+      modalClose.addEventListener('click', ()=>{
+      modal.classList.remove('show'); 
+      setTimeout(()=>modal.style.display='none',400);});
+      modal.addEventListener('click', e=>{
+      if(e.target===modal){
+      modal.classList.remove('show'); 
+      setTimeout(()=>modal.style.display='none',400);}});});
+      function toggleFeatures(btn){
+      const card = btn.closest('.feature-card');
+      const adv = card.querySelector('.feature-list.advanced');
+      const icon = btn.querySelector('i');
+      const text = btn.querySelector('span');
+      if(adv.classList.contains('open')){
+      adv.style.maxHeight = adv.scrollHeight + 'px';
+      requestAnimationFrame(()=>{
+      adv.style.maxHeight = '0px';});
+      adv.classList.remove('open');
+      text.textContent = 'Xem thêm tính năng';
+      btn.classList.remove('expanded');
+      icon.style.transform = 'rotate(0deg)';} else {
+      adv.classList.add('open');
+      adv.style.maxHeight = adv.scrollHeight + 'px';
+      text.textContent = 'Thu gọn';
+      btn.classList.add('expanded');
+      icon.style.transform = 'rotate(180deg)';}}(function(){
+      const menuToggle = document.getElementById('menuToggle');
+      const headerNav = document.getElementById('headerNav');
+      const closeMenu = document.querySelector('.close-menu');
+      const navLinks = document.querySelectorAll('#navMenu li a');
+     if (!menuToggle || !headerNav) return;
+     const CLOSE_ANIM_MS = 250;
+     let closeTimeout = null;
+     function openMenu() {
+     if (closeTimeout) { clearTimeout(closeTimeout); closeTimeout = null; headerNav.classList.remove('closing'); }
+     headerNav.classList.add('active');
+     menuToggle.classList.add('open');}
+     function startCloseMenu() {
+     if (headerNav.classList.contains('closing')) return;
+     headerNav.classList.add('closing');
+     closeTimeout = setTimeout(() => {
+     headerNav.classList.remove('active', 'closing');
+     menuToggle.classList.remove('open');
+     closeTimeout = null;}, CLOSE_ANIM_MS);}
+     document.querySelectorAll('.contact-link').forEach(link => {
+     link.addEventListener('click', e => {
+     e.preventDefault();
+     link.classList.toggle('active');
+     setTimeout(() => link.classList.remove('active'), 2000);});});
+     function updateClock() {
+     const now = new Date();
+     const options = {
+     timeZone: 'Asia/Ho_Chi_Minh',
+     hour: '2-digit',
+     minute: '2-digit',
+     second: '2-digit',
+     hour12: false};
+    document.getElementById('clock-time').textContent =
+    new Intl.DateTimeFormat('vi-VN', options).format(now);}
+    updateClock();
+    setInterval(updateClock, 1000);
+    if (closeMenu) {
+    closeMenu.addEventListener('click', (e) => {
+    e.stopPropagation();
+    startCloseMenu();});}
+    navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+    startCloseMenu();});});
+    document.addEventListener('click', (e) => {
+    if (
+    headerNav.classList.contains('active') &&
+    !headerNav.contains(e.target) &&
+    !menuToggle.contains(e.target)
+    ) {
+    startCloseMenu();}});})();
+    document.addEventListener('DOMContentLoaded', function () {
+    const upBtn = document.getElementById("scrollTopBtn");
+    const downBtn = document.getElementById("scrollDownBtn");
+    if (upBtn) {
+    upBtn.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    });}
+    if (downBtn) {
+    downBtn.addEventListener("click", function () {
+    window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth"}
+    );});
+  }});
+</script>
+</body>
+</html>
